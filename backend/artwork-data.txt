@@ -1,0 +1,17 @@
+/uploads/1753592874026-20250627_203739.jpg
+/uploads/1753592877355-20250623_162111.mp4
+http://localhost:3002/?artwork=%2Fuploads%2F1753592874026-20250627_203739.jpg&arContent=%2Fuploads%2F1753592877355-20250623_162111.mp4/uploads/1753592989837-CV1.jpg
+/uploads/1753592992688-20250623_162111.mp4
+http://localhost:3002/?artwork=%2Fuploads%2F1753592989837-CV1.jpg&arContent=%2Fuploads%2F1753592992688-20250623_162111.mp4/uploads/1753593113150-CV2.jpg
+/uploads/1753593116439-20250623_162111.mp4
+/ar?artwork=%2Fuploads%2F1753593113150-CV2.jpg&arContent=%2Fuploads%2F1753593116439-20250623_162111.mp4/uploads/1753593359214-CV2.jpg
+/uploads/1753593361656-20250623_162111.mp4
+https://ar-artwork-platform-cjy71gj9b-nameta24s-projects.vercel.app/ar?artwork=%2Fuploads%2F1753593359214-CV2.jpg&arContent=%2Fuploads%2F1753593361656-20250623_162111.mp4/uploads/1753593533784-CV2.jpg
+/uploads/1753593536767-imran2.mp4
+https://ar-artwork-platform-cjy71gj9b-nameta24s-projects.vercel.app/ar?artwork=%2Fuploads%2F1753593533784-CV2.jpg&arContent=%2Fuploads%2F1753593536767-imran2.mp4/uploads/1753593669305-20250627_203739.jpg
+/uploads/1753593671808-Demo_Recording.mp4
+https://ar-artwork-platform-cjy71gj9b-nameta24s-projects.vercel.app/ar?artwork=%2Fuploads%2F1753593669305-20250627_203739.jpg&arContent=%2Fuploads%2F1753593671808-Demo_Recording.mp4/uploads/1753594094233-ChatGPT Image Jun 20, 2025, 10_08_50 AM.png
+/uploads/1753594098622-lecture_17aaaf29-adcf-4723-a494-38dde27d872b.mp4
+https://ar-artwork-platform-cjy71gj9b-nameta24s-projects.vercel.app/ar?artwork=%2Fuploads%2F1753594094233-ChatGPT%20Image%20Jun%2020%2C%202025%2C%2010_08_50%20AM.png&arContent=%2Fuploads%2F1753594098622-lecture_17aaaf29-adcf-4723-a494-38dde27d872b.mp4/uploads/1753594136485-ChatGPT Image Jun 20, 2025, 10_08_50 AM.png
+/uploads/1753594140341-imran2.mp4
+https://ar-artwork-platform-cjy71gj9b-nameta24s-projects.vercel.app/ar?artwork=%2Fuploads%2F1753594136485-ChatGPT%20Image%20Jun%2020%2C%202025%2C%2010_08_50%20AM.png&arContent=%2Fuploads%2F1753594140341-imran2.mp4

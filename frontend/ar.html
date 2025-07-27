@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Experience</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+  <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <a-image id="artwork" position="0 0 -5" scale="2 2 2" rotation="0 0 0"></a-image>
+    <a-video id="arContent" position="0 0 -5" scale="2 2 2" rotation="0 0 0" autoplay loop></a-video>
+    <a-camera position="0 0 0"></a-camera>
+  </a-scene>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const artworkUrl = urlParams.get('artwork');
+    const arContentUrl = urlParams.get('arContent');
+    if (artworkUrl) document.getElementById('artwork').setAttribute('src', artworkUrl);
+    if (arContentUrl) document.getElementById('arContent').setAttribute('src', arContentUrl);
+  </script>
+</body>
+</html>
