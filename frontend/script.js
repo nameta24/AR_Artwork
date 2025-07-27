@@ -1,6 +1,9 @@
 let artworkUrl = '';
 let arContentUrl = '';
 
+// ✅ Use dynamic base URL
+const baseURL = window.location.origin;
+
 async function uploadFile(type) {
   const input = document.getElementById(`${type}Input`);
   const status = document.getElementById(`${type}Status`);
@@ -8,16 +11,22 @@ async function uploadFile(type) {
     status.textContent = 'Please select a file.';
     return;
   }
+
   const formData = new FormData();
   formData.append('file', input.files[0]);
+
   try {
-    const response = await fetch(`http://localhost:3001/upload/${type}`, {
+    const response = await fetch(`${baseURL}/upload/${type}`, {
       method: 'POST',
+      credentials: 'include', // ✅ important for session
       body: formData
     });
+
     const data = await response.json();
-    if (data.error) status.textContent = data.error;
-    else {
+
+    if (data.error) {
+      status.textContent = data.error;
+    } else {
       status.textContent = 'File uploaded successfully!';
       if (type === 'artwork') artworkUrl = data.url;
       else arContentUrl = data.url;
@@ -34,16 +43,23 @@ async function publishAR() {
     status.textContent = 'Please upload both artwork and AR content.';
     return;
   }
+
   try {
-    const response = await fetch('http://localhost:3001/publish', {
+    const response = await fetch(`${baseURL}/publish`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({ artworkUrl, arContentUrl })
     });
+
     const data = await response.json();
-    if (data.error) status.textContent = data.error;
-    else {
-      const arUrl = `http://localhost:3001${data.url}`;
+
+    if (data.error) {
+      status.textContent = data.error;
+    } else {
+      const arUrl = `${baseURL}${data.url}`;
       status.innerHTML = `AR Experience published! <a href="${arUrl}" target="_blank">View AR Experience</a>`;
     }
   } catch (error) {
